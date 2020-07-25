@@ -4,12 +4,21 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(
+/** Creates a component using create function. */
+const campainHeader = React.createElement(
+  'campain-header',
+  {},
+  '50% off summer sale!' 
+  );
+
+ReactDOM.render( [
+  campainHeader,   
   <React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>],
   document.getElementById('root')
 );
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
